@@ -79,7 +79,7 @@ void OnRecv(SocketContext* sc) {
   msghdr msg;
   iovec iov;
   ssize_t err;
-  char scratch[65536];
+  char scratch[262144];
 
   /* Union to avoid breaking strict-aliasing rules */
   union {
